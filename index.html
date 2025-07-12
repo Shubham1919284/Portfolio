@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Kumar Jha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Shubham Kumar Jha</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name" id="animated-name"></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <p class="hero-description">
+                        🚀 Final-year BTech student specializing in Computer Science & Data Science from Gulzar Group of
+                        Institutes (PTU).
+                        📊 Data Analyst experienced with real-world datasets, dashboards & insights.
+                        🤖 Developer of smart tools using Python, Flask, Streamlit, APIs, and automation logic.
+                        💡 I love building things that look like products, not just projects.
+                        🧠 Learning LLM integrations & NLP-powered tools.
+                        📈 On a mission to learn, build, and grow — one project at a time.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="profile.jpeg" alt="Shubham Kumar Jha" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>🚀 Who I Am</h3>
+                        <p> I’m <strong>Shubham Kumar Jha</strong>, a final-year B.Tech student in Computer Science &
+                            Data Science at Gulzar Group of Institutes (PTU). I’m not just driven by curiosity — I’m
+                            powered by it. Whether it’s data, systems, or ideas, I thrive at the intersection where
+                            insight meets innovation. To me, technology isn’t just code — it’s potential waiting to be
+                            unlocked. </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>💡 What I Do</h3>
+                        <p> I turn concepts into products. With hands-on experience in <strong>Python, SQL, Power BI,
+                                Flask, Streamlit, and APIs</strong>, I specialize in building smart, intuitive tools
+                            that solve real-world problems. From data dashboards to intelligent assistants, I focus on
+                            making technology feel effortless — functional, beautiful, and useful. </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🎯 What Drives Me</h3>
+                        <p> I’m currently diving deep into <strong>LLMs, NLP, and AI automation</strong> — not just to
+                            understand them, but to wield them meaningfully. My mission is to design systems that are
+                            not just smart, but also empathetic: tools that simplify decision-making and empower users.
+                            I believe in learning by doing, building by dreaming, and growing through every iteration.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>📫 Let’s Build Something</h3>
+                        <p> Whether you're exploring data-driven products, AI-powered solutions, or simply a good idea —
+                            I’d love to connect. You can reach me at <strong>sk1919284@gmail.com</strong>. I’m always up
+                            for a great collaboration, a bold challenge, or a meaningful conversation. </p>
+                    </div>
+                    <div class="about-actions">
+                        <a href="Sk.1.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="mailto:sk1919284@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Email Me
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="projects.png" alt="About Shubham" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-stream"></i>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-plug"></i>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="experience">
+  <div class="container">
+    <div class="section-header">
+      <h1 class="section-title">📜 Certifications</h1>
+      <p class="section-subtitle">Industry-recognized credentials</p>
+    </div>
+
+    <div class="timeline">
+      <!-- Data Analysis Certificate -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Issued: June 2024</div>
+          <h3>Data Analysis with Python</h3>
+          <h4>freeCodeCamp</h4>
+          <ul class="timeline-achievements">
+            <li>✅ Gained hands-on skills in data wrangling, cleaning, and visualization using NumPy & Pandas</li>
+            <li>✅ Built foundational experience in real-world analytics workflows with Python</li>
+            <li><a href="https://www.freecodecamp.org/certification/Shubham_Kumar_Jha/data-analysis-with-python-v7" target="_blank" class="btn btn-secondary">View Certificate</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Machine Learning Certificate -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Issued: June 2024</div>
+          <h3>Machine Learning with Python</h3>
+          <h4>freeCodeCamp</h4>
+          <ul class="timeline-achievements">
+            <li>✅ Learned supervised & unsupervised ML algorithms and model evaluation strategies</li>
+            <li>✅ Practiced real-world ML workflows using Scikit-learn and Python</li>
+            <li><a href="https://www.freecodecamp.org/certification/Shubham_Kumar_Jha/machine-learning-with-python-v7" target="_blank" class="btn btn-secondary">View Certificate</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎓 Education</h2>
+                <p class="section-subtitle">My academic background</p>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <div class="timeline-date">2022 – 2026 (Ongoing)</div>
+    <h3>B.Tech – Computer Science & Engineering (Data Science)</h3>
+    <h4>Gulzar Group of Institutes, PTU</h4>
+    <ul class="timeline-achievements">
+      <li>✅ Top 10% of batch (expected)</li>
+      <li>✅ Specialized in Data Science, Machine Learning, Python, and SQL</li>
+    </ul>
+  </div>
+</div>
+
+
+                <!-- Class 10th -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 – 2020</div>
+                        <h3>Secondary (Class 10th)</h3>
+                        <h4>Govt. Co-Ed Sr. Secondary School, Chilla Village, Delhi <span class="location">– School
+                                Code: 27061</span></h4>
+                        <ul class="timeline-achievements">
+                            <li>✅ CBSE Board – 72%</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Class 12th -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 – 2022</div>
+                        <h3>Senior Secondary (Class 12th)</h3>
+                        <h4>S.C.H.G.B. Sr. Secondary School, Mayur Vihar, Delhi <span class="location">– School Code:
+                                27065</span></h4>
+                        <ul class="timeline-achievements">
+                            <li>✅ CBSE Board – 77.4%</li>
+                            <li>✅ Subjects: Physics, Chemistry, Mathematics, English, Physical Education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <!-- Outlier Experience -->
+                    <div class="timeline-content">
+                        <div class="timeline-date">April 2024 – Oct 2024</div>
+                        <h3>AI Trainer – Prompt Evaluation & Optimization</h3>
+                        <h4>Outlier <span class="location">– Remote (USA)</span></h4>
+                        <ul class="timeline-achievements">
+                            <li>✅ Conducted in-depth evaluations of LLM-generated prompts and responses across
+                                technical, educational, and conversational domains</li>
+                            <li>✅ Diagnosed model hallucinations, contextual drift, and logic errors, providing precise
+                                feedback for prompt refinement</li>
+                            <li>✅ Crafted and tested prompt variations to enhance performance in diverse NLP tasks such
+                                as summarization, Q&A, and multi-turn dialogue</li>
+                            <li>✅ Coordinated with agile product and data teams to scale and standardize high-quality
+                                training data pipelines</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Prompt Engineering</span>
+                            <span class="skill-tag">LLM Evaluation</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">AI Model Tuning</span>
+                            <span class="skill-tag">Agile Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Data Annotation Experience -->
+                <div class="timeline-content">
+                    <div class="timeline-date">Jan 2025 – Mar 2025</div>
+                    <h3>AI Prompt Evaluator – NLP Model Quality Control</h3>
+                    <h4>Data Annotation <span class="location">– Remote (California, UK & EU)</span></h4>
+                    <ul class="timeline-achievements">
+                        <li>✅ Evaluated LLM-generated responses across varied prompt types — including summarization,
+                            Q&A, and casual conversation — for factual accuracy, coherence, and tone alignment</li>
+                        <li>✅ Flagged hallucinated, unsafe, or irrelevant completions while providing structured
+                            feedback to improve model performance and ethical standards</li>
+                        <li>✅ Contributed to large-scale AI alignment efforts by maintaining annotation consistency
+                            across edge cases and ambiguous scenarios</li>
+                        <li>✅ Collaborated with international QA teams to ensure annotation clarity, quality, and model
+                            behavior tracking</li>
+                    </ul>
+                    <div class="timeline-skills">
+                        <span class="skill-tag">Prompt Evaluation</span>
+                        <span class="skill-tag">LLM Feedback</span>
+                        <span class="skill-tag">AI Quality Control</span>
+                        <span class="skill-tag">Annotation Review</span>
+                        <span class="skill-tag">Remote Collaboration</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="1.png" alt="SkyCast Weather App" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Shubham1919284/skycast" target="_blank"
+                                    class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/Shubham1919284/skycast" target="_blank"
+                                    class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🌦️ SkyCast</h3>
+                        <p>Voice-enabled Flask weather application with 3-day forecasts, Air Quality Index monitoring,
+                            and weather alerts. Features emoji-enhanced, responsive UI for better user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">Voice Recognition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="2.png" alt="News Teller App" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Shubham1919284/News_Teller" target="_blank"
+                                    class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/Shubham1919284/News_Teller" target="_blank"
+                                    class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>📰 News Teller</h3>
+                        <p>Intelligent news summarization app that processes top Indian headlines with category filters.
+                            Built using NLP techniques with a clean, India-focused user interface.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">Text Processing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="3.png" alt="Movie Recommendation System" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Shubham1919284/Dynamic_Movie_Recommendation_System"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com/Shubham1919284/Dynamic_Movie_Recommendation_System"
+                                    target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🎬 Movie Recommendation System</h3>
+                        <p>TMDB-powered movie recommendation application with content-based filtering using cosine
+                            similarity. Features fast Flask UI and personalized movie suggestions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TMDB API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="4.png" alt="Additional Project" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🔬 Data Analytics Dashboard</h3>
+                        <p>Interactive data visualization dashboard built with Python and Streamlit. Features real-time
+                            data processing and insightful analytics for business intelligence.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you want to discuss a
+                        potential collaboration or just say hello, feel free to reach out!</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:sk1919284@gmail.com">sk1919284@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+918448517087">+91 84485 17087</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shubham-kumar-jha-1a2b3c" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Shubham1919284" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/_shubham_kumar_jha/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=918448517087" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                        <a href="Sk.1.pdf" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-download"></i>  Resume
+                        </a>
+                   
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Shubham Kumar Jha. All rights reserved.</p>
+                <p>Innovating one project at a time</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
