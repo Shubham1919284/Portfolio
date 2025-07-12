@@ -417,6 +417,7 @@ section {
     text-align: center;
 }
 
+<<<<<<< HEAD
 /* Certifications Section */
 #certifications {
   padding: 60px 0;
@@ -478,6 +479,8 @@ section {
 }
 
 
+=======
+>>>>>>> 6b516d834c1044760398ccd8ab66b5ce107b1777
 /* Experience Section */
 .experience {
     background: linear-gradient(135deg, rgba(148, 93, 214, 0.05) 0%, rgba(244, 103, 55, 0.05) 100%);
