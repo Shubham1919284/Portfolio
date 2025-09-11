@@ -7,7 +7,7 @@ Built with **HTML, CSS, and JavaScript**, this site is designed to **showcase my
 
 ## 📸 Portfolio Preview
 
-![Portfolio Demo](https://github.com/username/repo-name/blob/main/assets/portfolio_demo.gif?raw=true)
+[Portfolio Demo](https://github.com/username/repo-name/blob/main/assets/portfolio_demo.gif?raw=true)
 
 👉 **Live Portfolio**: \[https://shubham1919284.github.io/Portfolio/]
 
@@ -87,10 +87,10 @@ cd Portfolio
 
 ## 👨‍💻 Author
 
-Shubham Kumar Jha 🎓 B.Tech CSE (Data Science) | Gulzar Group of Institutes (PTU)
-📧 Email: sk1919284@gmail.com
-🔗 LinkedIn: linkedin.com/in/shubham-kumar-jha-1a2b3c
-🔗 GitHub: github.com/Shubham1919284
+Shubham Kumar Jha 🎓 B.Tech CSE (Data Science) | Gulzar Group of Institutes (PTU)  
+📧 Email: sk1919284@gmail.com  
+🔗 LinkedIn: [linkedin.com/in/shubham-kumar-jha-1a2b3c](https://linkedin.com/in/shubham-kumar-jha-1a2b3c)  
+🔗 GitHub: [github.com/Shubham1919284](https://github.com/Shubham1919284)
 
 ---
 
