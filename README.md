@@ -5,9 +5,29 @@ Built with **HTML, CSS, and JavaScript**, this site is designed to **showcase my
 
 ---
 
-## 📸 Portfolio Preview
+# 📸 Portfolio Preview
 
-[Portfolio Demo](https://github.com/username/repo-name/blob/main/assets/portfolio_demo.gif?raw=true)
+Here are some of the projects I've worked on. You can check the live demos and code on my GitHub links below.
+
+### Projects
+
+1. **News Digest App**  
+   - Built using Flask and Python  
+   - Aggregates news from multiple sources and provides category-wise filtering  
+   - [View on GitHub](https://github.com/Shubham1919284/news-digest)
+
+2. **Movie Recommendation System**  
+   - Built using Python, Google Books API, and collaborative filtering  
+   - Recommends books based on user preferences  
+   - [View on GitHub](https://github.com/Shubham1919284/book-recommendation-system)
+
+3. **Fitness Analytics Dashboard**  
+   - Built using Power BI and Streamlit  
+   - Visualizes gym performance and member demographics  
+   - [View on GitHub](https://github.com/Shubham1919284/fitness-dashboard)
+
+> For more projects, visit my [GitHub](https://github.com/Shubham1919284)
+
 
 👉 **Live Portfolio**: \[https://shubham1919284.github.io/Portfolio/]
 
