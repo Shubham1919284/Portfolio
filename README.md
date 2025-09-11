@@ -11,20 +11,20 @@ Here are some of the projects I've worked on. You can check the live demos and c
 
 ### Projects
 
-1. **News Digest App**  
-   - Built using Flask and Python  
-   - Aggregates news from multiple sources and provides category-wise filtering  
-   - [View on GitHub](https://github.com/Shubham1919284/news-digest)
+1. **Live Weather Dashboard**  
+   - Built using Python and real-time weather APIs  
+   - Displays live weather updates for multiple cities  
+   - [View on GitHub](https://github.com/Shubham1919284/Live_Weather_Dashboard)
 
-2. **Movie Recommendation System**  
-   - Built using Python, Google Books API, and collaborative filtering  
-   - Recommends books based on user preferences  
-   - [View on GitHub](https://github.com/Shubham1919284/book-recommendation-system)
+2. **Live Weather Dashboard**  
+   - Another version with extended features (if any, e.g., UI improvements, charts)  
+   - Built using Python and API integration  
+   - [View on GitHub](https://github.com/Shubham1919284/Live_Weather_Dashboard)
 
 3. **Fitness Analytics Dashboard**  
    - Built using Power BI and Streamlit  
    - Visualizes gym performance and member demographics  
-   - [View on GitHub](https://github.com/Shubham1919284/fitness-dashboard)
+   - [View on GitHub](https://github.com/Shubham1919284/-Fitness_Analytical_Dashboard)
 
 > For more projects, visit my [GitHub](https://github.com/Shubham1919284)
 
