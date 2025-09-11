@@ -74,14 +74,14 @@ cd Portfolio
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Enhancements  
 
-✨ **Project Filtering & Categories** – Filter projects by domain (ML, Data Analytics, Web Dev)
-✨ **Interactive Case Studies** – Embed live **Power BI dashboards** & **Streamlit apps**
-✨ **AI-Powered Portfolio Guide** – Chatbot answering FAQs about my skills/projects
-✨ **Downloadable Case Studies** – PDF exports of detailed project reports
-✨ **Portfolio Analytics** – Track engagement using **Google Analytics / Plausible**
-✨ **Dark Mode Toggle** – Modern UI option for users
+- 🔎 **Project Filtering & Categories** – Allow visitors to filter projects by domain (ML, Analytics, Web Apps)  
+- 📊 **Interactive Case Studies** – Embed live Power BI dashboards & Streamlit apps for hands-on exploration  
+- 🤖 **AI-Powered Portfolio Guide** – Add a chatbot to answer FAQs about skills, projects, and resume  
+- 📄 **Downloadable Case Studies** – Provide PDF versions of detailed project reports for recruiters  
+- 📈 **Portfolio Analytics** – Track visitor engagement with Google Analytics or Plausible  
+- 🌙 **Dark Mode Toggle** – Modern UI option for a sleek user experience  
 
 ---
 
