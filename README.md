@@ -28,7 +28,7 @@ Here are some of the projects I've worked on. You can check the live demos and c
 
 > For more projects, visit my [GitHub](https://github.com/Shubham1919284)
 
-
+---
 👉 **Live Portfolio**: \[https://shubham1919284.github.io/Portfolio/]
 
 ---
