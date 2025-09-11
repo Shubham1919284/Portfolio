@@ -87,13 +87,8 @@ cd Portfolio
 
 ## 👨‍💻 Author
 
-**Shubham Kumar Jha**
-🎓 BTech CSE (Data Science) | Gulzar Group of Institutes (PTU)
-
-📧 Email: [sk1919284@gmail.com](mailto:sk1919284@gmail.com)
-🔗 LinkedIn: [linkedin.com/in/shubham-kumar-jha-1a2b3c](https://www.linkedin.com/in/shubham-kumar-jha-1a2b3c)
-🔗 GitHub: [github.com/Shubham1919284](https://github.com/Shubham1919284)
-
+Shubham Kumar Jha 🎓 B.Tech CSE (Data Science) | Gulzar Group of Institutes (PTU)
+📧 sk1919284@gmail.com | 🔗 LinkedIn | 🔗 GitHub
 ---
 
 ⭐ If you like this project, don’t forget to **star the repo** and share feedback!
