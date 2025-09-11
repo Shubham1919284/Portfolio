@@ -13,14 +13,14 @@ Built with **HTML, CSS, and JavaScript**, this site is designed to **showcase my
 
 ---
 
-## ✨ Key Features
+## ✨ Features  
 
-✅ **Home Page** – Professional introduction with personal branding
-✅ **Projects Section** – Interactive showcase of my Data Science, ML, and Web Dev projects
-✅ **Resume Access** – Direct download of my CV (`Sk.1.pdf`)
-✅ **Gallery & Visuals** – Screenshots of projects (`1.png`, `2.png`, `3.png`, `4.png`)
-✅ **Responsive Design** – Works across devices (desktop, tablet, mobile)
-✅ **Interactive UI** – Smooth scrolling, hover effects, and JavaScript-based animations
+- 🏠 **Home Page** – Personal introduction with branding and tagline  
+- 📂 **Projects Showcase** – Data Science, ML, and Web Dev projects with screenshots  
+- 📄 **Resume Download** – Direct link to PDF resume (`Sk.1.pdf`)  
+- 🖼 **Gallery & Visuals** – Screenshots (1.png, 2.png, 3.png, 4.png)  
+- 📱 **Responsive Design** – Works seamlessly on desktop & mobile  
+- 🎨 **Interactive UI** – Smooth scrolling, hover animations, and JS-based interactions  
 
 ---
 
