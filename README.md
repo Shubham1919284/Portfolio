@@ -9,7 +9,7 @@ Built with **HTML, CSS, and JavaScript**, this site is designed to **showcase my
 
 Here are some of the projects I've worked on. You can check the live demos and code on my GitHub links below.
 
-### Projects
+### Projects 
 
 1. **Live Weather Dashboard**  
    - Built using Python and real-time weather APIs  
