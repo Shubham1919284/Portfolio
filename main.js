@@ -354,3 +354,51 @@ const optimizedScrollHandler = debounce(function() {
 
 window.addEventListener('scroll', optimizedScrollHandler);
 
+// --- Modal Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+    const projectCards = document.querySelectorAll('.project-card');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modals = document.querySelectorAll('.modal-content');
+    const closeBtns = document.querySelectorAll('.modal-close');
+
+    function openModal(modalId) {
+        modals.forEach(m => m.style.display = 'none');
+        const targetModal = document.getElementById(modalId);
+        if (targetModal) {
+            targetModal.style.display = 'block';
+            modalOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeModal() {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+        setTimeout(() => {
+            modals.forEach(m => m.style.display = 'none');
+        }, 300);
+    }
+
+    projectCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const modalId = card.getAttribute('data-modal');
+            if (modalId) openModal(modalId);
+        });
+    });
+
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', closeModal);
+    });
+
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            closeModal();
+        }
+    });
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+            closeModal();
+        }
+    });
+});

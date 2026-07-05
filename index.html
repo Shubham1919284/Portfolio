@@ -1,651 +1,1008 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Kumar Jha | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Shubham Kumar Jha | ML Engineer & Data Scientist</title>
+    <meta name="description" content="Portfolio of Shubham Kumar Jha — B.Tech CSE (Data Science), building ML solutions with Python, XGBoost, and Streamlit. Open to ML Engineer and Data Science roles.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Shubham Kumar Jha</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-<!--                 <a href="#education" class="nav-link">Education</a> -->
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="greeting">Hi, I'm</span>
-                        <span class="name" id="animated-name"></span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        <span class="typing-text" id="typing-text"></span>
-                        <span class="cursor">|</span>
-                    </p>
-                    <p class="hero-description">
-                        🚀 Final-year BTech student specializing in Computer Science & Data Science from Gulzar Group of
-                        Institutes (PTU).
-                        📊 Data Analyst experienced with real-world datasets, dashboards & insights.
-                        🤖 Developer of smart tools using Python, Flask, Streamlit, APIs, and automation logic.
-                        💡 I love building things that look like products, not just projects.
-                        🧠 Learning LLM integrations & NLP-powered tools.
-                        📈 On a mission to learn, build, and grow — one project at a time.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                         <a href="https://drive.google.com/file/d/1fPDwFm4-fCiAaE5CKxeCuZnVHVb_ZXK7/view?usp=sharing" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-download"></i> Resume
+<!-- ========== NAVIGATION ========== -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+        <a href="#home" class="nav-logo">SKJ<span class="dot">.</span></a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#about"          class="nav-link">About</a>
+            <a href="#skills"         class="nav-link">Skills</a>
+            <a href="#projects"       class="nav-link">Projects</a>
+            <a href="#experience"     class="nav-link">Experience</a>
+            <a href="#certifications" class="nav-link">Certifications</a>
+            <a href="#contact"        class="nav-link">Contact</a>
+            <a href="Shubham_ML_DS_Resume_Updated.pdf" target="_blank" class="nav-link nav-resume">
+                <i class="fas fa-file-alt"></i> Resume
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <i class="fas fa-bars" id="hamburger-icon"></i>
+        </button>
+    </div>
+</nav>
+
+
+<!-- ========== HERO ========== -->
+<section id="home" class="hero">
+    <div class="container hero-inner">
+
+        <!-- Left: Text -->
+        <div class="hero-text">
+            <h1 class="hero-name" style="font-size: clamp(4.5rem, 6.5vw, 6.5rem); margin-bottom: 0.5rem; line-height: 1.1;">
+                <span class="word">Shubham</span>
+                <span class="word">Kumar</span>
+                <span class="word">Jha</span>
+            </h1>
+
+            <div class="hero-typed-role" style="font-size: clamp(2rem, 3vw, 2.8rem); font-family: var(--font-head); font-weight: 700; color: var(--cyan); margin-bottom: 2.5rem; height: 4rem; display: flex; align-items: center; opacity: 0; animation: fadeIn 0.5s ease forwards 1s;">
+                <span id="typed-text"></span><span class="cursor-blink"></span>
+            </div>
+
+            <p class="hero-desc" style="max-width: 600px; margin-bottom: 3.5rem;">
+                Specialized in predictive modeling and data analytics. Built and deployed end-to-end ML applications handling 550K+ records using Python, XGBoost, and Streamlit. Gained practical pipeline experience through an industry internship and remote AI evaluation roles.
+            </p>
+
+            <div class="hero-stats stagger" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 4rem; opacity: 0; animation: fadeSlideUp 0.6s ease forwards 1.3s;">
+                <div class="stat-row" style="padding: 1.5rem; gap: 1.5rem; justify-content: flex-start;">
+                    <div class="stat-num counter" data-target="550" data-suffix="K+" style="font-size: 2.2rem; min-width: auto;">0</div>
+                    <div class="stat-label" style="font-size: 1.2rem;">Retail Transaction<br>Records Processed</div>
+                </div>
+                <div class="stat-row" style="padding: 1.5rem; gap: 1.5rem; justify-content: flex-start;">
+                    <div class="stat-num counter" data-target="7000" data-suffix="+" style="font-size: 2.2rem; min-width: auto;">0</div>
+                    <div class="stat-label" style="font-size: 1.2rem;">Telecom Customer<br>Records Analysed</div>
+                </div>
+                <div class="stat-row" style="padding: 1.5rem; gap: 1.5rem; justify-content: flex-start;">
+                    <div class="stat-num counter" data-target="500" data-suffix="+" style="font-size: 2.2rem; min-width: auto;">0</div>
+                    <div class="stat-label" style="font-size: 1.2rem;">Professional AI Evaluation<br>Tasks Completed</div>
+                </div>
+                <div class="stat-row" style="padding: 1.5rem; gap: 1.5rem; justify-content: flex-start;">
+                    <div class="stat-num counter" data-target="4" data-suffix="+" style="font-size: 2.2rem; min-width: auto;">0</div>
+                    <div class="stat-label" style="font-size: 1.2rem;">End-to-End Machine<br>Learning Projects</div>
+                </div>
+            </div>
+
+            <div class="hero-cta" style="margin-bottom: 0;">
+                <a href="#projects" class="btn btn-primary">
+                    View Projects <i class="fas fa-arrow-down"></i>
                 </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="profile.jpeg" alt="Shubham Kumar Jha" class="profile-img">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
+                <a href="Shubham_ML_DS_Resume_Updated.pdf" target="_blank" class="btn btn-secondary">
+                    Download Resume <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know me better</p>
+        <!-- Right: Photo -->
+        <div class="hero-photo">
+            <div class="photo-frame">
+                <div class="photo-glow"></div>
+                <div class="photo-inner">
+                    <img src="assets/images/profile.jpeg" alt="Shubham Kumar Jha" class="profile-img">
+                </div>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-card">
-                        <h3>🚀 Who I Am</h3>
-                        <p> I’m <strong>Shubham Kumar Jha</strong>, a B.Tech CSE (Data Science) student graduating in 2026.
-                            I’m not just driven by curiosity — I’m powered by it. Whether it’s extracting patterns from data
-                            or building systems, I thrive at the intersection where insight meets innovation. Having gained
-                            hands-on industry experience through a Data Science internship, I see technology not just as
-                            code, but as potential waiting to be unlocked. </p>
-                    </div>
-                    <div class="about-card">
-                        <h3>💡 What I Do</h3>
-                        <p> I turn raw data into impactful products. With hands-on experience in <strong>Python, SQL, Power BI,
-                                Machine Learning, and Data Analysis</strong>, I specialize in building smart, intuitive
-                            solutions that solve real-world problems. Recently, I delivered an end-to-end ML solution—an
-                            XGBoost-based purchase prediction model (R² = 0.6712) deployed via Streamlit—and conducted
-                            a telecom churn EDA across 7,000+ records. I focus on making technology functional and useful. </p>
-                    </div>
-                    <div class="about-card">
-                        <h3>🎯 What Drives Me</h3>
-                        <p> I’m currently diving deep into <strong>predictive modeling, NLP, and AI automation</strong> —
-                            not just to understand them, but to wield them meaningfully. My mission is to design systems
-                            that are not just smart, but also practical: data-driven tools that simplify decision-making
-                            and empower users. I believe in learning by doing, building by dreaming, and growing through
-                            every iteration. </p>
-                    </div>
-                    <div class="about-card">
-                        <h3>📫 Let’s Build Something</h3>
-                        <p> Whether you're exploring data-driven products, AI-powered solutions, or simply a good idea —
-                            I’d love to connect. You can reach me at <strong>sk1919284@gmail.com</strong>. I’m always up
-                            for a great collaboration, a bold challenge, or a meaningful conversation. </p>
-                    </div>
-                    <div class="about-actions">
+        </div>
 
-                        <a href="https://drive.google.com/file/d/1fPDwFm4-fCiAaE5CKxeCuZnVHVb_ZXK7/view?usp=sharing" target="_blank" class="btn btn-primary">
-    <i class="fas fa-file-alt"></i> View Resume
-</a>
+    </div>
 
-                            <a href="mailto:sk1919284@gmail.com" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i> Email Me
+    <!-- Scroll down indicator -->
+    <div class="scroll-down" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+        <span>scroll</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="section section--alt">
+    <div class="container">
+        <p class="section-label reveal">Engineering Philosophy</p>
+
+        <!-- Hook line -->
+        <div class="about-hook reveal">
+            Building reproducible ML workflows.
+            <span>Solving real business problems.</span>
+        </div>
+
+        <!-- Two-column body -->
+        <div class="about-body">
+
+            <div class="about-summary reveal-left" style="grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+                
+                <!-- Left Column -->
+                <div>
+                    <h3 style="color: var(--cyan); margin-bottom: 1.5rem; font-size: 1.8rem;">Professional Profile</h3>
+                    <p style="margin-bottom: 3.5rem;">
+                        I am an aspiring Machine Learning Engineer focused on designing predictive models and deploying data-driven solutions. My expertise lies in building end-to-end pipelines that transform raw data into actionable insights and robust web applications.
+                    </p>
+
+                    <h3 style="color: var(--cyan); margin-bottom: 1.5rem; font-size: 1.8rem;">Engineering Philosophy</h3>
+                    <ul class="tl-bullets" style="padding-left: 0; margin-bottom: 0;">
+                        <li><strong>Context First:</strong> Understanding the business problem before selecting algorithms.</li>
+                        <li><strong>Data Quality:</strong> Prioritizing rigorous data exploration and feature engineering.</li>
+                        <li><strong>Empirical Approach:</strong> Comparing multiple models to ensure optimal performance.</li>
+                        <li><strong>Robustness:</strong> Building reproducible, explainable, and scalable ML workflows.</li>
+                    </ul>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <h3 style="color: var(--cyan); margin-bottom: 1.5rem; font-size: 1.8rem;">Current Technical Focus</h3>
+                    <div class="tags-wrap" style="margin-bottom: 3.5rem;">
+                        <span class="tag" style="opacity: 1; transform: scale(1);">Predictive Modeling</span>
+                        <span class="tag" style="opacity: 1; transform: scale(1);">Feature Engineering</span>
+                        <span class="tag" style="opacity: 1; transform: scale(1);">Model Evaluation</span>
+                        <span class="tag" style="opacity: 1; transform: scale(1);">Explainable AI</span>
+                        <span class="tag" style="opacity: 1; transform: scale(1);">Streamlit Deployment</span>
+                        <span class="tag" style="opacity: 1; transform: scale(1);">ML Pipelines</span>
+                    </div>
+
+                    <h3 style="color: var(--cyan); margin-bottom: 1.5rem; font-size: 1.8rem;">Career Objective</h3>
+                    <p style="margin-bottom: 3.5rem;">
+                        My objective is to engineer and deploy practical Machine Learning systems that solve complex, real-world problems. I aim to leverage a data-driven mindset to architect scalable predictive solutions.
+                    </p>
+
+                    <!-- ML Project Workflow -->
+                    <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <h4 style="font-size: 1.3rem; margin-bottom: 1.2rem; color: var(--text); text-transform: uppercase; letter-spacing: 1px;">Project Workflow</h4>
+                        <div style="font-family: var(--font-mono); font-size: 1.15rem; color: var(--text-muted); line-height: 2;">
+                            Business Problem <span style="color: var(--cyan); margin: 0 4px;">→</span> 
+                            Data Understanding <span style="color: var(--cyan); margin: 0 4px;">→</span> 
+                            Feature Engineering <span style="color: var(--cyan); margin: 0 4px;">→</span> 
+                            Model Comparison <span style="color: var(--cyan); margin: 0 4px;">→</span> 
+                            Evaluation <span style="color: var(--cyan); margin: 0 4px;">→</span> 
+                            Deployment <span style="color: var(--cyan); margin: 0 4px;">→</span> 
+                            Iteration
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ========== SKILLS ========== -->
+<section id="skills" class="section">
+    <div class="container">
+        <p class="section-label reveal">What I Work With</p>
+        <h2 class="section-heading reveal">Engineering Capabilities</h2>
+        
+        <p class="reveal" style="font-size: 1.6rem; color: var(--text-muted); max-width: 800px; margin-top: -3.5rem; margin-bottom: 5rem; line-height: 1.7;">
+            My engineering capabilities have been developed through end-to-end Machine Learning projects, industry internship experience, and production-ready deployments.
+        </p>
+
+        <div class="skills-grid stagger">
+
+            <!-- Card 1: ML Engineering -->
+            <div class="skill-card reveal" style="border-color: var(--cyan); box-shadow: 0 12px 30px rgba(0, 180, 216, 0.08);">
+                <i class="fas fa-brain skill-ghost-icon"></i>
+                <div class="skill-card-icon"><i class="fas fa-brain"></i></div>
+                <h3>Machine Learning Engineering</h3>
+                <p style="font-size: 1.4rem; color: var(--text-muted); margin-bottom: 2.2rem; line-height: 1.6;">
+                    Designed and optimized predictive models, comparing R² and RMSE to deploy a robust XGBoost architecture.
+                </p>
+                <div class="tags-wrap" id="tags-1">
+                    <span class="tag">Predictive Modeling</span>
+                    <span class="tag">Feature Engineering</span>
+                    <span class="tag">Regression</span>
+                    <span class="tag">Classification</span>
+                    <span class="tag">Model Evaluation</span>
+                    <span class="tag">Model Comparison</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Data Processing -->
+            <div class="skill-card reveal">
+                <i class="fas fa-database skill-ghost-icon"></i>
+                <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+                <h3>Data Processing</h3>
+                <p style="font-size: 1.4rem; color: var(--text-muted); margin-bottom: 2.2rem; line-height: 1.6;">
+                    Conducted end-to-end exploratory data analysis on 7,000+ telecom records to extract actionable churn insights.
+                </p>
+                <div class="tags-wrap" id="tags-2">
+                    <span class="tag">Exploratory Data Analysis</span>
+                    <span class="tag">Data Cleaning</span>
+                    <span class="tag">Statistical Analysis</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Deployment -->
+            <div class="skill-card reveal">
+                <i class="fas fa-rocket skill-ghost-icon"></i>
+                <div class="skill-card-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Deployment &amp; Version Control</h3>
+                <p style="font-size: 1.4rem; color: var(--text-muted); margin-bottom: 2.2rem; line-height: 1.6;">
+                    Built, versioned, and shipped interactive, real-time predictive applications using Streamlit and Git.
+                </p>
+                <div class="tags-wrap" id="tags-3">
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                </div>
+            </div>
+
+            <!-- Card 4: Programming -->
+            <div class="skill-card reveal">
+                <i class="fas fa-code skill-ghost-icon"></i>
+                <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+                <h3>Programming</h3>
+                <p style="font-size: 1.4rem; color: var(--text-muted); margin-bottom: 2.2rem; line-height: 1.6;">
+                    Engineered robust ML pipelines and scalable model architectures using Python and SQL.
+                </p>
+                <div class="tags-wrap" id="tags-4">
+                    <span class="tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="tag">SQL</span>
+                </div>
+            </div>
+
+            <!-- Card 5: Visualization -->
+            <div class="skill-card reveal">
+                <i class="fas fa-chart-pie skill-ghost-icon"></i>
+                <div class="skill-card-icon"><i class="fas fa-chart-pie"></i></div>
+                <h3>Visualization &amp; Communication</h3>
+                <p style="font-size: 1.4rem; color: var(--text-muted); margin-bottom: 2.2rem; line-height: 1.6;">
+                    Translated complex statistical datasets into clear, actionable charts to drive business retention strategies.
+                </p>
+                <div class="tags-wrap" id="tags-5">
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                    <span class="tag">Power BI</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ========== PROJECTS ========== -->
+<section id="projects" class="section section--alt">
+    <div class="container">
+        <p class="section-label reveal">What I've Built</p>
+        <h2 class="section-heading reveal">Featured Projects</h2>
+
+        <div class="projects-grid stagger">
+
+            <!-- Project 1: Black Friday -->
+            <div class="project-card reveal" data-modal="modal-bf">
+                <!-- TODO: Replace visual area with Streamlit screenshot when app is deployed -->
+                <div class="project-preview project-preview--bf">
+                    <i class="fas fa-shopping-cart preview-icon"></i>
+                    <span class="preview-label">Streamlit App</span>
+                    <span class="preview-sub">Screenshot coming soon</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-meta-row">
+                        <h3>Black Friday Purchase Prediction</h3>
+                        <a href="https://github.com/Shubham1919284/black-friday-purchase-prediction"
+                           target="_blank" class="project-gh-link" onclick="event.stopPropagation();">
+                            <i class="fab fa-github"></i>
                         </a>
                     </div>
-                </div>
-                <div class="about-image">
-                    <img src="projects.png" alt="About Shubham" class="about-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">Technologies I work with</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>SQL</span>
-                        </div>
+                    <div class="project-date">Apr 2026</div>
+                    <p class="project-desc">
+                        End-to-end regression pipeline on 550K+ Black Friday records. Trained and compared 5 models &mdash;
+                        XGBoost won. Deployed as a live Streamlit web app for real-time predictions.
+                    </p>
+                    <div class="project-pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">XGBoost</span>
+                        <span class="pill">Scikit-Learn</span>
+                        <span class="pill">Streamlit</span>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Data Science & ML</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Data Analysis</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-robot"></i>
-                            <span>Machine Learning</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-brain"></i>
-                            <span>NLP</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-network-wired"></i>
-                            <span>XGBoost</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-filter"></i>
-                            <span>Feature Engineering</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-pie"></i>
-                            <span>Statistical Analysis</span>
-                        </div>
+                    <div class="project-metrics" style="padding-top: 1.5rem; margin-top: 1.5rem; border-top: 1px solid var(--border);">
+                        <div style="font-size: 1.4rem; color: var(--cyan); font-weight: bold; margin-bottom: 0.5rem;">Best Model: XGBoost</div>
+                        <div style="font-size: 1.25rem; color: var(--text-muted);">R² = 0.6712</div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Flask</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-stream"></i>
-                            <span>Streamlit</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-plug"></i>
-                            <span>APIs</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fas fa-chart-bar"></i>
-                            <span>Power BI</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git & GitHub</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cogs"></i>
-                            <span>Automation</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-area"></i>
-                            <span>Tableau</span>
-                        </div>
-                    </div>
-                </div>
-
-            
-            </div>
-        </div>
-    </section>
-
-        <!-- Certifications Section -->
-                <section id="certifications" class="experience">
-                    <div class="container">
-                        <div class="section-header">
-                            <h1 class="section-title">📜 Certifications</h1>
-                            <p class="section-subtitle">Industry-recognized credentials</p>
-                        </div>
-
-                        <div class="timeline">
-                            <!-- Data Analysis Certificate -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">Issued: July 2025</div>
-                                    <h3>Data Analysis with Python</h3>
-                                    <h4>freeCodeCamp</h4>
-                                    <ul class="timeline-achievements">
-                                        <li>✅ Gained hands-on skills in data wrangling, cleaning, and visualization
-                                            using NumPy & Pandas</li>
-                                        <li>✅ Built foundational experience in real-world analytics workflows with
-                                            Python</li>
-                                        <li><a href="https://www.freecodecamp.org/certification/Shubham_Kumar_Jha/data-analysis-with-python-v7"
-                                                target="_blank" class="btn btn-secondary">View Certificate</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Machine Learning Certificate -->
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <div class="timeline-date">Issued: July 2025</div>
-                                    <h3>Machine Learning with Python</h3>
-                                    <h4>freeCodeCamp</h4>
-                                    <ul class="timeline-achievements">
-                                        <li>✅ Learned supervised & unsupervised ML algorithms and model evaluation
-                                            strategies</li>
-                                        <li>✅ Practiced real-world ML workflows using Scikit-learn and Python</li>
-                                        <li><a href="https://www.freecodecamp.org/certification/Shubham_Kumar_Jha/machine-learning-with-python-v7"
-                                                target="_blank" class="btn btn-secondary">View Certificate</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">🎓 Education</h2>
-                <p class="section-subtitle">My academic background</p>
-            </div>
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022 – 2026 (Ongoing)</div>
-                        <h3>B.Tech – Computer Science & Engineering (Data Science)</h3>
-                        <h4>Gulzar Group of Institutes, PTU</h4>
-                        <ul class="timeline-achievements">
-                            <li>✅ Top 10% of batch (expected)</li>
-                            <li>✅ Specialized in Data Science, Machine Learning, Python, and SQL</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Class 10th -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2018 – 2020</div>
-                        <h3>Secondary (Class 10th)</h3>
-                        <h4>Govt. Co-Ed Sr. Secondary School, Chilla Village, Delhi <span class="location">– School
-                                Code: 27061</span></h4>
-                        <ul class="timeline-achievements">
-                            <li>✅ CBSE Board – 72%</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Class 12th -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020 – 2022</div>
-                        <h3>Senior Secondary (Class 12th)</h3>
-                        <h4>S.C.H.G.B. Sr. Secondary School, Mayur Vihar, Delhi <span class="location">– School Code:
-                                27065</span></h4>
-                        <ul class="timeline-achievements">
-                            <li>✅ CBSE Board – 77.4%</li>
-                            <li>✅ Subjects: Physics, Chemistry, Mathematics, English, Physical Education</li>
-                        </ul>
-                    </div>
+                    <div class="project-cta">View Full Case Study <i class="fas fa-arrow-right"></i></div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    
-
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experience</h2>
-                <p class="section-subtitle">My professional journey</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <!-- Solitaire Infosys Experience -->
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jan 2026 – Jun 2026</div>
-                        <h3>Data Science Trainee (Internship)</h3>
-                        <h4>Solitaire Infosys Pvt. Ltd. <span class="location">– Mohali, Punjab</span></h4>
-                        <ul class="timeline-achievements">
-                            <li>✅ Worked on a telecom client's dataset as part of a collaborative Data Science team, preparing high-quality, analysis-ready data to support customer churn analysis.</li>
-                            <li>✅ Applied Python and Microsoft Excel to clean, validate, and preprocess datasets, ensuring data quality and consistency for downstream analysis.</li>
-                            <li>✅ Contributed to the development of analytical dashboards by preparing processed datasets and supporting data visualization for churn analysis.</li>
-                            <li>✅ Collaborated with team members throughout the project, gaining hands-on experience with real-world client data and analytical workflows.</li>
-                        </ul>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Excel</span>
-                            <span class="skill-tag">Data Cleaning</span>
-                            <span class="skill-tag">Data Preprocessing</span>
-                            <span class="skill-tag">Churn Analysis</span>
-                        </div>
-                    </div>
+            <!-- Project 2: Telecom Churn -->
+            <div class="project-card reveal" data-modal="modal-tc">
+                <div class="project-preview project-preview--tc">
+                    <i class="fas fa-chart-line preview-icon"></i>
+                    <span class="preview-label">EDA Report</span>
+                    <span class="preview-sub">Churn Analytics</span>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <!-- Outlier Experience -->
-                    <div class="timeline-content">
-                        <div class="timeline-date">April 2024 – Oct 2024</div>
-                        <h3>AI Trainer – Prompt Evaluation & Optimization</h3>
-                        <h4>Outlier <span class="location">– Remote (USA)</span></h4>
-                        <ul class="timeline-achievements">
-                            <li>✅ Conducted in-depth evaluations of LLM-generated prompts and responses across
-                                technical, educational, and conversational domains</li>
-                            <li>✅ Diagnosed model hallucinations, contextual drift, and logic errors, providing precise
-                                feedback for prompt refinement</li>
-                            <li>✅ Crafted and tested prompt variations to enhance performance in diverse NLP tasks such
-                                as summarization, Q&A, and multi-turn dialogue</li>
-                            <li>✅ Coordinated with agile product and data teams to scale and standardize high-quality
-                                training data pipelines</li>
-                        </ul>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">Prompt Engineering</span>
-                            <span class="skill-tag">LLM Evaluation</span>
-                            <span class="skill-tag">NLP</span>
-                            <span class="skill-tag">AI Model Tuning</span>
-                            <span class="skill-tag">Agile Collaboration</span>
-                        </div>
+                <div class="project-body">
+                    <div class="project-meta-row">
+                        <h3>Telecom Customer Churn Analysis</h3>
+                        <a href="https://github.com/Shubham1919284/Telecom-Churn-Analysis"
+                           target="_blank" class="project-gh-link" onclick="event.stopPropagation();">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
-                </div>
-                <!-- Data Annotation Experience -->
-                <div class="timeline-content">
-                    <div class="timeline-date">Jan 2025 – Mar 2025</div>
-                    <h3>AI Prompt Evaluator – NLP Model Quality Control</h3>
-                    <h4>Data Annotation <span class="location">– Remote (California, UK & EU)</span></h4>
-                    <ul class="timeline-achievements">
-                        <li>✅ Evaluated LLM-generated responses across varied prompt types — including summarization,
-                            Q&A, and casual conversation — for factual accuracy, coherence, and tone alignment</li>
-                        <li>✅ Flagged hallucinated, unsafe, or irrelevant completions while providing structured
-                            feedback to improve model performance and ethical standards</li>
-                        <li>✅ Contributed to large-scale AI alignment efforts by maintaining annotation consistency
-                            across edge cases and ambiguous scenarios</li>
-                        <li>✅ Collaborated with international QA teams to ensure annotation clarity, quality, and model
-                            behavior tracking</li>
-                    </ul>
-                    <div class="timeline-skills">
-                        <span class="skill-tag">Prompt Evaluation</span>
-                        <span class="skill-tag">LLM Feedback</span>
-                        <span class="skill-tag">AI Quality Control</span>
-                        <span class="skill-tag">Annotation Review</span>
-                        <span class="skill-tag">Remote Collaboration</span>
+                    <div class="project-date">Sep 2025</div>
+                    <p class="project-desc">
+                        Deep-dive EDA on 7,000+ telecom customer records. Found that month-to-month customers
+                        churn at 3&times; the rate of annual holders &mdash; a key insight for retention strategy.
+                    </p>
+                    <div class="project-pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">Pandas</span>
+                        <span class="pill">Seaborn</span>
+                        <span class="pill">EDA</span>
                     </div>
+                    <div class="project-metrics" style="padding-top: 1.5rem; margin-top: 1.5rem; border-top: 1px solid var(--border);">
+                        <div style="font-size: 1.4rem; color: var(--cyan); font-weight: bold; margin-bottom: 0.5rem;">7000+ Records</div>
+                        <div style="font-size: 1.25rem; color: var(--text-muted);">EDA &amp; Feature Discovery</div>
+                    </div>
+                    <div class="project-cta">View Full Case Study <i class="fas fa-arrow-right"></i></div>
                 </div>
             </div>
 
         </div>
-        </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Some of my recent work</p>
+
+<!-- ========== MODALS ========== -->
+<div class="modal-bg" id="modalBg">
+
+    <!-- Black Friday Modal -->
+    <div class="modal-box" id="modal-bf" style="display:none;">
+        <button class="modal-close-btn" data-close><i class="fas fa-times"></i></button>
+        <div class="modal-inner">
+            <span class="modal-kpi">Machine Learning · Regression · Deployment</span>
+            <h2>Black Friday Purchase Prediction</h2>
+            <p class="modal-tagline">Python · XGBoost · Scikit-Learn · Streamlit · Kaggle Dataset</p>
+
+            <div class="modal-section" style="margin-top: 3rem;">
+                <h3>1. Why This Project Matters</h3>
+                <p>This project demonstrates a complete Machine Learning regression workflow—from exploratory data analysis and feature engineering to model benchmarking, deployment, and real-time prediction using a large-scale retail dataset.</p>
             </div>
-            <div class="projects-grid">
-                <!-- 1. Black Friday Purchase Prediction -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <!-- TODO: Replace with actual project screenshot -->
-                        <img src="2.png" alt="Black Friday Purchase Prediction" class="project-img">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Shubham1919284/black-friday-purchase-prediction" target="_blank"
-                                    class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>🛒 Black Friday Purchase Prediction</h3>
-                        <ul style="list-style-type: disc; padding-left: 2rem; margin-bottom: 2rem; font-size: 1.5rem; line-height: 1.6; color: rgba(255, 255, 255, 0.8);">
-                            <li style="margin-bottom: 0.5rem;">Performed EDA and feature engineering on 550K+ retail transaction records from the Black Friday Kaggle dataset.</li>
-                            <li style="margin-bottom: 0.5rem;">Trained and compared 5 regression models; XGBoost achieved best performance (R² = 0.6712, RMSE = 2878.57).</li>
-                            <li style="margin-bottom: 0.5rem;">Implemented preprocessing pipelines with categorical encoding and missing value imputation.</li>
-                            <li style="margin-bottom: 0.5rem;">Developed a Streamlit app for real-time purchase amount prediction based on customer and product inputs.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">XGBoost</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">Streamlit</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- 2. Telecom Customer Churn Analysis -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <!-- TODO: Replace with actual project screenshot -->
-                        <img src="2.png" alt="Telecom Customer Churn Analysis" class="project-img">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Shubham1919284/Telecom-Churn-Analysis" target="_blank"
-                                    class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>📞 Telecom Customer Churn Analysis</h3>
-                        <ul style="list-style-type: disc; padding-left: 2rem; margin-bottom: 2rem; font-size: 1.5rem; line-height: 1.6; color: rgba(255, 255, 255, 0.8);">
-                            <li style="margin-bottom: 0.5rem;">Conducted end-to-end EDA on 7,000+ telecom customer records to identify churn drivers across contract type, tenure, and billing.</li>
-                            <li style="margin-bottom: 0.5rem;">Found month-to-month customers churned at 3× the rate of annual contract holders — directly informing retention strategy.</li>
-                            <li style="margin-bottom: 0.5rem;">Produced Matplotlib and Seaborn visualizations highlighting the top 5 factors affecting customer retention.</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Matplotlib</span>
-                            <span class="tech-tag">Seaborn</span>
-                            <span class="tech-tag">EDA</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3. Movie Recommendation System -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="3.png" alt="Movie Recommendation System" class="project-img">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Shubham1919284/Dynamic_Movie_Recommendation_System"
-                                    target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://github.com/Shubham1919284/Dynamic_Movie_Recommendation_System"
-                                    target="_blank" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>🎬 Movie Recommendation System</h3>
-                        <p>TMDB-powered movie recommendation application with content-based filtering using cosine
-                            similarity. Features fast Flask UI and personalized movie suggestions.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TMDB API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 4. SkyCast -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="1.png" alt="SkyCast Weather App" class="project-img">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Shubham1919284/skycast" target="_blank"
-                                    class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://github.com/Shubham1919284/skycast" target="_blank"
-                                    class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>🌦️ SkyCast</h3>
-                        <p>Voice-enabled Flask weather application with 3-day forecasts, Air Quality Index monitoring,
-                            and weather alerts. Features emoji-enhanced, responsive UI for better user experience.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">API</span>
-                            <span class="tech-tag">Voice Recognition</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="modal-section">
+                <h3>2. Business Problem</h3>
+                <p>During massive retail events like Black Friday, retailers struggle to accurately forecast individual customer spend. Without precise predictive models, inventory management suffers and marketing campaigns waste budget on low-converting users.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's work together</p>
+            <div class="modal-section">
+                <h3>3. Business Impact</h3>
+                <p>Predicting purchase amounts allows for proactive <strong>Inventory Planning</strong> and <strong>Marketing Optimization</strong>. By understanding expected customer spend, businesses can allocate stock efficiently and tailor promotions to high-value segments, directly increasing ROI.</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always interested in new opportunities and exciting projects. Whether you want to discuss a
-                        potential collaboration or just say hello, feel free to reach out!</p>
 
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:sk1919284@gmail.com">sk1919284@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+918448517087">+91 84485 17087</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <span>India</span>
-                        </div>
-                    </div>
+            <div class="modal-section">
+                <h3>4. Dataset Overview</h3>
+                <div class="modal-result-box" style="margin-top: 1.5rem; margin-bottom: 0;">
+                    <div class="result-item"><div class="result-num">550K+</div><div class="result-label">Dataset Size</div></div>
+                    <div class="result-item"><div class="result-num">10</div><div class="result-label">Features</div></div>
+                    <div class="result-item"><div class="result-num" style="font-size: 1.8rem;">Regression</div><div class="result-label">Prediction Type</div></div>
+                    <div class="result-item"><div class="result-num" style="font-size: 1.8rem;">Purchase Amt</div><div class="result-label">Target Variable</div></div>
                 </div>
+                <p style="margin-top: 1.5rem; font-size: 1.3rem; color: var(--text-muted);">Data Source: Kaggle Black Friday Dataset</p>
+            </div>
 
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
+            <div class="modal-section">
+                <h3>5. Engineering Pipeline</h3>
+                <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-muted); line-height: 2.2; background: rgba(255,255,255,0.02); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--border); margin-top: 1.5rem;">
+                    Dataset <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Exploratory Data Analysis <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Data Cleaning <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Feature Engineering <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Encoding &amp; Scaling <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Model Training <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Model Evaluation <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Deployment
                 </div>
             </div>
 
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/shubham-kumar-jha-1a2b3c" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
+            <div class="modal-section">
+                <h3>6. Engineering Decisions</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+                    <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <h4 style="color: var(--cyan); margin-bottom: 1rem; font-size: 1.5rem;">Why XGBoost?</h4>
+                        <p style="font-size: 1.35rem; margin-bottom: 0;">Selected for its superior generalization and lower prediction error on structured tabular data, efficiently handling sparse categorical matrices.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <h4 style="color: var(--cyan); margin-bottom: 1rem; font-size: 1.5rem;">Why StandardScaler?</h4>
+                        <p style="font-size: 1.35rem; margin-bottom: 0;">The same scaler fitted during training is strictly reused during inference to maintain feature consistency and prevent prediction drift in production.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <h4 style="color: var(--cyan); margin-bottom: 1rem; font-size: 1.5rem;">Why Model Comparison?</h4>
+                        <p style="font-size: 1.35rem; margin-bottom: 0;">Multiple regression architectures were benchmarked to empirically validate the bias-variance trade-off before committing to a final deployment artifact.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>7. Technical Evaluation</h3>
+                <div style="overflow-x: auto; margin-top: 1.5rem;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 1.4rem;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--border); color: var(--text-muted);">
+                                <th style="padding: 1.5rem;">Model</th>
+                                <th style="padding: 1.5rem;">MAE</th>
+                                <th style="padding: 1.5rem;">RMSE</th>
+                                <th style="padding: 1.5rem;">R²</th>
+                                <th style="padding: 1.5rem;">Observation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 1.5rem;">Linear Regression</td>
+                                <td style="padding: 1.5rem;">3577.24</td>
+                                <td style="padding: 1.5rem;">4683.93</td>
+                                <td style="padding: 1.5rem;">0.1295</td>
+                                <td style="padding: 1.5rem; color: var(--text-muted); font-size: 1.3rem;">Struggled with non-linear relationships.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 1.5rem;">Decision Tree</td>
+                                <td style="padding: 1.5rem;">2362.27</td>
+                                <td style="padding: 1.5rem;">3337.43</td>
+                                <td style="padding: 1.5rem;">0.5580</td>
+                                <td style="padding: 1.5rem; color: var(--text-muted); font-size: 1.3rem;">Prone to overfitting training data.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 1.5rem;">Random Forest</td>
+                                <td style="padding: 1.5rem;">2226.12</td>
+                                <td style="padding: 1.5rem;">3056.58</td>
+                                <td style="padding: 1.5rem;">0.6293</td>
+                                <td style="padding: 1.5rem; color: var(--text-muted); font-size: 1.3rem;">Strong performance, but computationally heavy.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border);">
+                                <td style="padding: 1.5rem;">Gradient Boosting</td>
+                                <td style="padding: 1.5rem;">2269.16</td>
+                                <td style="padding: 1.5rem;">2993.26</td>
+                                <td style="padding: 1.5rem;">0.6445</td>
+                                <td style="padding: 1.5rem; color: var(--text-muted); font-size: 1.3rem;">Solid baseline for boosting architectures.</td>
+                            </tr>
+                            <tr style="background: rgba(0, 180, 216, 0.1); border: 1px solid var(--cyan);">
+                                <td style="padding: 1.5rem; font-weight: bold; color: var(--cyan);">XGBoost</td>
+                                <td style="padding: 1.5rem; font-weight: bold; color: var(--cyan);">2137.54</td>
+                                <td style="padding: 1.5rem; font-weight: bold; color: var(--cyan);">2878.57</td>
+                                <td style="padding: 1.5rem; font-weight: bold; color: var(--cyan);">0.6712</td>
+                                <td style="padding: 1.5rem; color: var(--cyan); font-size: 1.3rem;">Best generalization; selected for deployment.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>8. Feature Importance / Key Findings</h3>
+                <div style="margin-top: 2rem;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <span style="width: 180px; font-size: 1.3rem;">Product_Category_1</span>
+                        <div style="flex: 1; background: var(--border); height: 12px; border-radius: 6px; margin: 0 1.5rem; position: relative;">
+                            <div style="width: 85%; background: var(--cyan); height: 100%; border-radius: 6px;"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <span style="width: 180px; font-size: 1.3rem;">Occupation</span>
+                        <div style="flex: 1; background: var(--border); height: 12px; border-radius: 6px; margin: 0 1.5rem; position: relative;">
+                            <div style="width: 45%; background: var(--cyan); height: 100%; border-radius: 6px;"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <span style="width: 180px; font-size: 1.3rem;">Age</span>
+                        <div style="flex: 1; background: var(--border); height: 12px; border-radius: 6px; margin: 0 1.5rem; position: relative;">
+                            <div style="width: 30%; background: var(--cyan); height: 100%; border-radius: 6px;"></div>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.4rem; color: var(--text-muted);">
+                        <strong>Product_Category_1</strong> heavily dominates the predictive weight, indicating that what is being purchased dictates spend far more than customer demographics. Demographic variables like Age act only as secondary modifiers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>9. Challenges &amp; Solutions</h3>
+                <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <div style="font-family: var(--font-mono); font-size: 1.3rem; color: var(--text-muted); line-height: 2;">
+                            Handling high-cardinality categorical variables <br>
+                            <span style="color: var(--cyan);">↓</span><br>
+                            Target Encoding strategy <br>
+                            <span style="color: var(--cyan);">↓</span><br>
+                            Improved model compatibility without matrix sparsity
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>10. Lessons Learned</h3>
+                <ul class="modal-bullets">
+                    <li>Feature Engineering influenced overall R² performance significantly more than hyperparameter tuning across algorithms.</li>
+                    <li>Tree-based ensembles drastically outperformed linear regression by naturally mapping non-linear purchasing behaviors.</li>
+                    <li>Product category constraints provided stronger signal variance than customer demographic data.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>11. Engineering Roadmap</h3>
+                <ul class="modal-bullets">
+                    <li>SHAP Explainability Dashboard integration</li>
+                    <li>REST API endpoint for Batch Prediction</li>
+                    <li>Public Cloud Deployment (AWS / GCP)</li>
+                    <li>Automated Retraining Pipeline for data drift</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" style="background: rgba(0, 180, 216, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid var(--border); margin-top: 3rem;">
+                <h3 style="color: var(--cyan); margin-bottom: 1.5rem;"><i class="fas fa-lightbulb"></i> Key Engineering Takeaways</h3>
+                <ul class="modal-bullets" style="margin-bottom: 0;">
+                    <li>Feature engineering contributed more to performance than changing algorithms.</li>
+                    <li>Tree-based ensemble models generalized significantly better than linear regression.</li>
+                    <li>Maintaining identical preprocessing during training and inference improved deployment reliability.</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <a href="https://github.com/Shubham1919284/black-friday-purchase-prediction"
+                   target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> View Source Code
                 </a>
-                <a href="https://github.com/Shubham1919284" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/_shubham_kumar_jha/" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=918448517087" target="_blank" class="social-link">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://drive.google.com/file/d/1fPDwFm4-fCiAaE5CKxeCuZnVHVb_ZXK7/view?usp=sharing" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-download"></i> Resume
-                </a>
-
-
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Shubham Kumar Jha. All rights reserved.</p>
-                <p>Innovating one project at a time</p>
+    <!-- Telecom Churn Modal -->
+    <div class="modal-box" id="modal-tc" style="display:none;">
+        <button class="modal-close-btn" data-close><i class="fas fa-times"></i></button>
+        <div class="modal-inner">
+            <span class="modal-kpi">Exploratory Data Analysis · Data Visualization · Statistical Analysis</span>
+            <h2>Telecom Customer Churn Analysis</h2>
+            <p class="modal-tagline">Python · Pandas · Matplotlib · Seaborn</p>
+
+            <div class="modal-section" style="margin-top: 3rem;">
+                <h3>1. Why This Project Matters</h3>
+                <p>This project demonstrates a rigorous analytical engineering approach to diagnosing customer retention issues. By systematically cleaning, transforming, and visualizing telecom data, raw historical records are converted into actionable business intelligence.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>2. Business Problem</h3>
+                <p>Telecom providers lose millions annually to customer churn. Without a data-driven understanding of exactly why and when customers leave, retention budgets are wasted on broad strategies rather than targeted, high-ROI interventions.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>3. Business Impact</h3>
+                <p>Pinpointing the exact drivers of churn allows the business to overhaul pricing tiers, modify contract incentives, and deploy targeted retention campaigns, directly protecting recurring subscription revenue.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>4. Dataset Overview</h3>
+                <div class="modal-result-box" style="margin-top: 1.5rem; margin-bottom: 0;">
+                    <div class="result-item"><div class="result-num">7,043</div><div class="result-label">Dataset Size</div></div>
+                    <div class="result-item"><div class="result-num">21</div><div class="result-label">Features</div></div>
+                    <div class="result-item"><div class="result-num" style="font-size: 1.8rem;">Analytical</div><div class="result-label">Project Type</div></div>
+                    <div class="result-item"><div class="result-num" style="font-size: 1.8rem;">Churn Status</div><div class="result-label">Target Variable</div></div>
+                </div>
+                <p style="margin-top: 1.5rem; font-size: 1.3rem; color: var(--text-muted);">Data Source: Telco Customer Churn Kaggle Dataset</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>5. Analytical Workflow</h3>
+                <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-muted); line-height: 2.2; background: rgba(255,255,255,0.02); padding: 2.5rem; border-radius: 8px; border: 1px solid var(--border); margin-top: 1.5rem;">
+                    Dataset <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Data Cleaning <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Exploratory Data Analysis <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Statistical Analysis <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Feature Selection <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Visualization <span style="color: var(--cyan); margin: 0 6px;">→</span> 
+                    Business Recommendations
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>6. Engineering Decisions</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+                    <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <h4 style="color: var(--cyan); margin-bottom: 1rem; font-size: 1.5rem;">Why prioritize EDA?</h4>
+                        <p style="font-size: 1.35rem; margin-bottom: 0;">Extensive exploratory data analysis was prioritized to validate feature integrity and ensure that missing values (e.g., TotalCharges) were systematically resolved before generating insights.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <h4 style="color: var(--cyan); margin-bottom: 1rem; font-size: 1.5rem;">Why statistical analysis?</h4>
+                        <p style="font-size: 1.35rem; margin-bottom: 0;">Applied distribution mapping to distinguish actual statistical significance from random variance when evaluating customer departure rates.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.02); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <h4 style="color: var(--cyan); margin-bottom: 1rem; font-size: 1.5rem;">Why focus on contracts?</h4>
+                        <p style="font-size: 1.35rem; margin-bottom: 0;">Contract type, tenure, and service usage were isolated as the primary focus because variance metrics indicated they held the highest signal density for churn prediction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>7. Key Analytical Findings</h3>
+                <ul class="modal-bullets">
+                    <li><strong>Month-to-Month customers</strong> showed significantly higher churn rates compared to annual subscribers.</li>
+                    <li><strong>Fiber Optic customers</strong> churned more frequently than DSL users, indicating potential service quality or pricing issues.</li>
+                    <li><strong>Long-tenure customers</strong> were exponentially more likely to stay, demonstrating strong baseline loyalty after the first year.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>8. Most Influential Churn Factors</h3>
+                <div style="margin-top: 2rem;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <span style="width: 180px; font-size: 1.3rem;">Contract Type</span>
+                        <div style="flex: 1; background: var(--border); height: 12px; border-radius: 6px; margin: 0 1.5rem; position: relative;">
+                            <div style="width: 90%; background: var(--cyan); height: 100%; border-radius: 6px;"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                        <span style="width: 180px; font-size: 1.3rem;">Tenure</span>
+                        <div style="flex: 1; background: var(--border); height: 12px; border-radius: 6px; margin: 0 1.5rem; position: relative;">
+                            <div style="width: 75%; background: var(--cyan); height: 100%; border-radius: 6px;"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <span style="width: 180px; font-size: 1.3rem;">Monthly Charges</span>
+                        <div style="flex: 1; background: var(--border); height: 12px; border-radius: 6px; margin: 0 1.5rem; position: relative;">
+                            <div style="width: 60%; background: var(--cyan); height: 100%; border-radius: 6px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>9. Challenges &amp; Solutions</h3>
+                <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border);">
+                        <div style="font-family: var(--font-mono); font-size: 1.3rem; color: var(--text-muted); line-height: 2;">
+                            Silent data formatting errors (TotalCharges as strings) <br>
+                            <span style="color: var(--cyan);">↓</span><br>
+                            Custom coercive parsing pipeline <br>
+                            <span style="color: var(--cyan);">↓</span><br>
+                            Cleaned numerical array ready for correlation mapping
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h3>10. Lessons Learned</h3>
+                <ul class="modal-bullets">
+                    <li>Demographic variables (e.g., gender) exhibited near-zero predictive correlation compared to financial account parameters.</li>
+                    <li>High monthly charges strongly correlate with churn only when not offset by multi-year contract incentives.</li>
+                    <li>Clean data visualization proved more effective at communicating risk to non-technical stakeholders than raw statistical outputs.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>11. Engineering Roadmap</h3>
+                <p style="font-size: 1.4rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                    This foundational analysis directly informs the feature selection process for building a future predictive churn model. Future enhancements include:
+                </p>
+                <ul class="modal-bullets">
+                    <li>Training a Logistic Regression baseline model</li>
+                    <li>Benchmarking against tree-based classifiers (Random Forest, XGBoost, LightGBM)</li>
+                    <li>Deploying a real-time churn risk evaluation API</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" style="background: rgba(0, 180, 216, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid var(--border); margin-top: 3rem;">
+                <h3 style="color: var(--cyan); margin-bottom: 1.5rem;"><i class="fas fa-lightbulb"></i> Key Engineering Takeaways</h3>
+                <ul class="modal-bullets" style="margin-bottom: 0;">
+                    <li>Data cleaning (coercing data types) was the most critical step for correlation accuracy.</li>
+                    <li>Financial incentives completely dominated demographic factors in churn prediction.</li>
+                    <li>Clear visual storytelling proved essential for translating statistical significance into business action.</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <a href="https://github.com/Shubham1919284/Telecom-Churn-Analysis"
+                   target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> View Source Code
+                </a>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <script src="main.js"></script>
+</div><!-- end modal-bg -->
+
+
+<!-- ========== EXPERIENCE ========== -->
+<section id="experience" class="section">
+    <div class="container">
+        <p class="section-label reveal">My Journey</p>
+        <h2 class="section-heading reveal">Experience</h2>
+
+        <div class="timeline">
+
+            <!-- Solitaire Infosys -->
+            <div class="timeline-entry reveal">
+                <div class="tl-dot"></div>
+                <div class="tl-date">Jan 2026 – Jun 2026</div>
+                <div class="tl-header">
+                    <h3 class="tl-role">Data Science Trainee</h3>
+                    <span class="tl-badge badge--ds">Data Science</span>
+                </div>
+                <p class="tl-company">Solitaire Infosys Pvt. Ltd. <span class="location">| Mohali, Punjab</span></p>
+                <ul class="tl-bullets">
+                    <li>Engineered data cleaning pipelines for a telecom client's dataset, resulting in structured and query-ready data for downstream modeling.</li>
+                    <li>Evaluated dataset schema to isolate key behavioral features, successfully establishing the foundation for churn prediction analysis.</li>
+                    <li>Collaborated within a cross-functional data team to apply enterprise data handling standards, ensuring consistent and reproducible analytic workflows.</li>
+                </ul>
+                <div class="tl-tags">
+                    <span class="tl-tag">Data Cleaning</span>
+                    <span class="tl-tag">EDA</span>
+                    <span class="tl-tag">Client Data</span>
+                    <span class="tl-tag">Team Collaboration</span>
+                </div>
+            </div>
+
+            <!-- Data Annotation -->
+            <div class="timeline-entry reveal">
+                <div class="tl-dot"></div>
+                <div class="tl-date">Jan 2025 – Mar 2025</div>
+                <div class="tl-header">
+                    <h3 class="tl-role">AI Prompt Evaluator — NLP Model QC</h3>
+                    <span class="tl-badge badge--ai">AI / RLHF</span>
+                </div>
+                <p class="tl-company">Data Annotation <span class="location">| Remote (California, UK &amp; EU)</span></p>
+                <ul class="tl-bullets">
+                    <li>Evaluated language model completions across complex reasoning tasks, identifying logical inconsistencies to improve overall model safety.</li>
+                    <li>Optimized AI alignment pipelines by diagnosing contextual hallucinations, producing structured feedback that directly informed model refinement.</li>
+                    <li>Engineered evaluation rubrics for edge-case scenarios, ensuring high consistency in human-feedback data provided to training teams.</li>
+                </ul>
+                <div class="tl-tags">
+                    <span class="tl-tag">LLM Evaluation</span>
+                    <span class="tl-tag">RLHF</span>
+                    <span class="tl-tag">AI Alignment</span>
+                    <span class="tl-tag">NLP</span>
+                    <span class="tl-tag">Remote</span>
+                </div>
+            </div>
+
+            <!-- Outlier -->
+            <div class="timeline-entry reveal">
+                <div class="tl-dot"></div>
+                <div class="tl-date">Apr 2024 – Sep 2024</div>
+                <div class="tl-header">
+                    <h3 class="tl-role">AI Trainer — Prompt Engineering &amp; Evaluation</h3>
+                    <span class="tl-badge badge--pe">Prompt Engineering</span>
+                </div>
+                <p class="tl-company">Outlier <span class="location">| Remote (USA)</span></p>
+                <ul class="tl-bullets">
+                    <li>Developed targeted prompt variations for multi-turn conversational tasks, empirically improving model adherence to complex NLP instructions.</li>
+                    <li>Evaluated generative outputs across technical domains, identifying logic errors to isolate specific vulnerabilities in model reasoning.</li>
+                    <li>Designed structured feedback loops for agile data teams, accelerating the refinement of high-quality training datasets for AI optimization.</li>
+                </ul>
+                <div class="tl-tags">
+                    <span class="tl-tag">Prompt Engineering</span>
+                    <span class="tl-tag">LLM Evaluation</span>
+                    <span class="tl-tag">NLP</span>
+                    <span class="tl-tag">AI Model Tuning</span>
+                    <span class="tl-tag">USA Remote</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ========== CERTIFICATIONS ========== -->
+<section id="certifications" class="section section--alt">
+    <div class="container">
+        <p class="section-label reveal">Verified</p>
+        <h2 class="section-heading reveal">Certifications</h2>
+
+        <div class="certs-list stagger">
+
+            <div class="cert-banner reveal-right">
+                <div class="cert-left">
+                    <i class="fas fa-certificate cert-check"></i>
+                    <div>
+                        <div class="cert-issuer">freeCodeCamp</div>
+                        <div class="cert-name">Data Analysis with Python</div>
+                        <div class="cert-date">July 2025</div>
+                    </div>
+                </div>
+                <div class="cert-right">
+                    <a href="https://www.freecodecamp.org/certification/shubham_kumar_jha/data-analysis-with-python-v7"
+                       target="_blank" class="cert-link-btn">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <div class="cert-banner reveal-right">
+                <div class="cert-left">
+                    <i class="fas fa-certificate cert-check"></i>
+                    <div>
+                        <div class="cert-issuer">freeCodeCamp</div>
+                        <div class="cert-name">Machine Learning with Python</div>
+                        <div class="cert-date">July 2025</div>
+                    </div>
+                </div>
+                <div class="cert-right">
+                    <a href="https://www.freecodecamp.org/certification/shubham_kumar_jha/machine-learning-with-python-v7"
+                       target="_blank" class="cert-link-btn">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ========== ACHIEVEMENTS ========== -->
+<section id="achievements" class="section">
+    <div class="container">
+        <p class="section-label reveal">Recognition</p>
+        <h2 class="section-heading reveal" style="margin-bottom: 1.5rem;">Achievements</h2>
+        <p class="reveal" style="text-align: center; font-size: 1.4rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 4rem auto; line-height: 1.6;">
+            Key milestones reflecting technical growth, engineering experience, industry exposure, and professional recognition in Machine Learning and Data Science.
+        </p>
+
+        <div class="achievements-grid stagger">
+
+            <!-- Primary Achievement (Visually Dominant) -->
+            <div class="achievement-card reveal" style="border: 1px solid var(--cyan); background: rgba(0, 180, 216, 0.03); transform: scale(1.02);">
+                <div class="ach-icon-ring" style="color: var(--cyan); border-color: rgba(0, 180, 216, 0.5);"><i class="fas fa-trophy"></i></div>
+                <div class="ach-big" style="color: var(--cyan);">1st Place</div>
+                <div class="ach-title" style="color: var(--text);">Project Innovation Competition</div>
+                <div class="ach-desc">Won 1st place among 1,000+ participants by presenting a Machine Learning project demonstrating end-to-end model development and deployment.</div>
+            </div>
+
+            <div class="achievement-card reveal">
+                <div class="ach-icon-ring"><i class="fas fa-globe"></i></div>
+                <div class="ach-big">Global</div>
+                <div class="ach-title">International AI Project Experience</div>
+                <div class="ach-desc">Collaborated remotely with international AI teams through Outlier, contributing to LLM evaluation, prompt quality improvement, annotation workflows, and model response assessment.</div>
+            </div>
+
+            <div class="achievement-card reveal">
+                <div class="ach-icon-ring"><i class="fas fa-database"></i></div>
+                <div class="ach-big">550K+</div>
+                <div class="ach-title">Records Engineered</div>
+                <div class="ach-desc">Designed and deployed a complete Machine Learning regression pipeline using XGBoost, feature engineering, model benchmarking, and Streamlit deployment on a retail dataset containing over 550,000 transaction records.</div>
+            </div>
+
+            <div class="achievement-card reveal">
+                <div class="ach-icon-ring"><i class="fas fa-users"></i></div>
+                <div class="ach-big">500+</div>
+                <div class="ach-title">Professional Network</div>
+                <div class="ach-desc">Built a growing professional network of 500+ connections across Machine Learning, Data Science, AI, recruiters, engineers, and industry professionals through LinkedIn.</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ========== EDUCATION ========== -->
+<section id="education" class="section section--alt">
+    <div class="container">
+        <p class="section-label reveal">Background</p>
+        <h2 class="section-heading reveal">Education</h2>
+
+        <div class="edu-timeline">
+
+            <!-- B.Tech -->
+            <div class="edu-entry reveal">
+                <div class="edu-dot"></div>
+                <div class="edu-year">2022 – 2026 (Expected)</div>
+                <h3 class="edu-degree">B.Tech — CSE (Data Science)</h3>
+                <p class="edu-school">Gulzar Group of Institutes, PTU | Ludhiana, Punjab</p>
+                <div class="edu-tags">
+                    <span class="edu-tag">Data Science</span>
+                    <span class="edu-tag">Machine Learning</span>
+                    <span class="edu-tag">Statistics</span>
+                    <span class="edu-tag">DBMS</span>
+                    <span class="edu-tag">Python Programming</span>
+                </div>
+            </div>
+
+            <!-- 12th -->
+            <div class="edu-entry reveal">
+                <div class="edu-dot"></div>
+                <div class="edu-year">2021 – 2022</div>
+                <h3 class="edu-degree">Class XII — Science (PCM)</h3>
+                <p class="edu-school">CBSE Board</p>
+            </div>
+
+            <!-- 10th -->
+            <div class="edu-entry reveal">
+                <div class="edu-dot"></div>
+                <div class="edu-year">2019 – 2020</div>
+                <h3 class="edu-degree">Class X</h3>
+                <p class="edu-school">CBSE Board</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="contact-inner">
+
+            <!-- Left: Statement -->
+            <div class="contact-statement reveal-left">
+                <h2>If you're building something with <span>data</span>, let's talk.</h2>
+                <p class="contact-sub">
+                    Open to internship and entry-level opportunities in
+                    Machine Learning and Data Science.
+                </p>
+                <p class="contact-open">
+                    ▸ ML Engineer &nbsp;·&nbsp; Data Scientist &nbsp;·&nbsp; AI/NLP Roles
+                </p>
+            </div>
+
+            <!-- Right: Card -->
+            <div class="contact-card reveal-right">
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:sk1919284@gmail.com">sk1919284@gmail.com</a>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <span>+91-8448517087</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>India &mdash; Open to Remote</span>
+                </div>
+
+                <div class="contact-divider"></div>
+
+                <div class="contact-btns">
+                    <a href="mailto:sk1919284@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/shubhamkr-jha/" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Shubham1919284" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <p class="footer-text">
+            &copy; 2026 <span>Shubham Kumar Jha</span> &mdash; Built with intention.
+        </p>
+        <div class="footer-socials">
+            <a href="https://github.com/Shubham1919284" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shubhamkr-jha/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:sk1919284@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
