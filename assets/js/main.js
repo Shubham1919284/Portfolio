@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─── 4. HERO TYPING EFFECT ───────────────────────
     const typedEl = document.getElementById('typed-text');
     if (typedEl) {
-        const typedRoles = ['Aspiring Machine Learning Engineer', 'Data Scientist'];
+        const typedRoles = ['Machine Learning Engineer', 'Data Scientist', 'Data Analyst', 'BI & Data Analytics'];
         let roleIdx = 0;
         let charIdx = 0;
         let isDeleting = false;
@@ -116,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ─── 7. COUNTER ANIMATION ────────────────────────
     const counters = document.querySelectorAll('.counter[data-target]');
-    const r2El     = document.getElementById('r2-stat');
 
     function animateCounter(el) {
         const target   = +el.dataset.target;
@@ -139,38 +138,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000 / fps);
     }
 
-    function animateR2() {
-        const target   = 0.67;
-        const duration = 2000;
-        const fps      = 60;
-        const steps    = Math.round(duration / (1000 / fps));
-        let   step     = 0;
-
-        const timer = setInterval(() => {
-            step++;
-            const progress = step / steps;
-            const eased    = 1 - Math.pow(1 - progress, 3);
-            r2El.textContent = (target * eased).toFixed(2);
-            if (step >= steps) {
-                r2El.textContent = target.toFixed(2);
-                clearInterval(timer);
-            }
-        }, 1000 / fps);
-    }
-
     const counterObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const el = entry.target;
                 if (el.classList.contains('counter')) animateCounter(el);
-                if (el.id === 'r2-stat')              animateR2();
                 counterObserver.unobserve(el);
             }
         });
     }, { threshold: 0.5 });
 
     counters.forEach(c => counterObserver.observe(c));
-    if (r2El) counterObserver.observe(r2El);
 
 
     // ─── 8. SKILL TAGS STAGGER POP-IN ────────────────

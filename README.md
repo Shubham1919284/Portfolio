@@ -11,17 +11,19 @@ Here are some of the key Machine Learning projects featured in this portfolio:
 
 ### Projects 
 
-1. **Black Friday Purchase Prediction**  
-   - Built using Python, XGBoost, and Pandas  
-   - Evaluated multiple regression architectures to predict customer spend
-   - End-to-end pipeline from data cleaning to model deployment
-   - [View on GitHub](https://github.com/Shubham1919284/black-friday-purchase-prediction)
+1. **Room Type Predictor - NYC Airbnb**  
+   - End-to-end ML application to predict NYC Airbnb room types using a tuned Random Forest classifier.
+   - Built with Python, Pandas, Scikit-Learn, FastAPI, and Vanilla JS.
+   - Includes class-imbalance handling (class_weight="balanced") and hyperparameter tuning.
+   - Real-time classification backend deployed on Render.
+   - [View on GitHub](https://github.com/Shubham1919284/Room-Type-Predictor---NYC-Airbnb)
 
-2. **Telecom Customer Churn Analysis**  
-   - Exploratory Data Analysis and statistical feature selection
-   - Identified key drivers of customer churn (financial incentives vs demographic factors)
-   - Visualized using Matplotlib and Seaborn
-   - [View on GitHub](https://github.com/Shubham1919284/Telecom-Churn-Analysis)
+2. **Olist E-Commerce BI Dashboard**  
+   - End-to-end data analytics pipeline transforming raw CSVs into an interactive 9-page Power BI dashboard.
+   - Relational schema and indexing built in PostgreSQL.
+   - SQL-based semantic layer (fact/dimension pattern) queried via DirectQuery.
+   - Core KPIs, delivery metrics, and time-intelligence implemented using 26 DAX measures.
+   - [View on GitHub](https://github.com/Shubham1919284/olist-ecommerce-bi-dashboard)
 
 > For more projects, visit my [GitHub](https://github.com/Shubham1919284)
 
@@ -67,7 +69,7 @@ cd Portfolio
 
 ## ????? Author
 
-**Shubham Kumar Jha** ?? Aspiring Machine Learning Engineer & Data Scientist
+**Shubham Kumar Jha** ?? Machine Learning Engineer & Data Scientist
 ?? Email: sk1919284@gmail.com  
 ?? LinkedIn: [linkedin.com/in/shubhamkr-jha](https://www.linkedin.com/in/shubhamkr-jha/)  
 ?? GitHub: [github.com/Shubham1919284](https://github.com/Shubham1919284)
